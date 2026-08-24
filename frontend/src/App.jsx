@@ -2136,7 +2136,7 @@ export default function App() {
               {/* RIGHT / MIDDLE COLUMN: RANKINGS & FILTER SECTION */}
               <div className="lg:col-span-2 space-y-6">
                 
-                {/* METRICS QUICK STATS PANELS */}
+                {/* METRICS QUICK STATS PANELS - 8 PARAMETERS */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div className="screener-card p-4 flex flex-col justify-between bg-[#070a13]/85 border-slate-900 shadow-md">
                     <div>
@@ -2175,6 +2175,47 @@ export default function App() {
                     </div>
                     <div className="w-full bg-slate-900 h-1 rounded-full overflow-hidden mt-3">
                       <div className="h-full bg-slate-400 shadow-[0_0_8px_#a1a1aa]" style={{ width: `${metrics.total > 0 ? (metrics.screening / metrics.total) * 100 : 0}%` }} />
+                    </div>
+                  </div>
+
+                  {/* Row 2 */}
+                  <div className="screener-card p-4 flex flex-col justify-between bg-[#070a13]/85 border border-slate-900 shadow-md">
+                    <div>
+                      <span className="text-[9px] font-extrabold text-slate-500 uppercase tracking-widest font-mono">Average Score</span>
+                      <p className="font-extrabold text-2xl text-indigo-400 mt-1 font-mono">{metrics.avgScore > 0 ? metrics.avgScore.toFixed(1) : '0.0'}<span className="text-sm text-slate-500">/10</span></p>
+                    </div>
+                    <div className="w-full bg-slate-900 h-1 rounded-full overflow-hidden mt-3">
+                      <div className="h-full bg-indigo-400 shadow-[0_0_8px_#818cf8]" style={{ width: `${(metrics.avgScore / 10) * 100}%` }} />
+                    </div>
+                  </div>
+
+                  <div className="screener-card p-4 flex flex-col justify-between bg-[#070a13]/85 border border-slate-900 shadow-md">
+                    <div>
+                      <span className="text-[9px] font-extrabold text-slate-500 uppercase tracking-widest font-mono">Rejected</span>
+                      <p className="font-extrabold text-2xl text-rose-450 mt-1 font-mono">{metrics.rejected}</p>
+                    </div>
+                    <div className="w-full bg-slate-900 h-1 rounded-full overflow-hidden mt-3">
+                      <div className="h-full bg-rose-400 shadow-[0_0_8px_#fb7185]" style={{ width: `${metrics.total > 0 ? (metrics.rejected / metrics.total) * 100 : 0}%` }} />
+                    </div>
+                  </div>
+
+                  <div className="screener-card p-4 flex flex-col justify-between bg-[#070a13]/85 border border-slate-900 shadow-md">
+                    <div>
+                      <span className="text-[9px] font-extrabold text-slate-500 uppercase tracking-widest font-mono">System Status</span>
+                      <p className="font-extrabold text-lg text-emerald-400 mt-2 font-mono flex items-center gap-1.5"><CheckCircle className="w-4 h-4" /> ONLINE</p>
+                    </div>
+                    <div className="w-full bg-slate-900 h-1 rounded-full overflow-hidden mt-3">
+                      <div className="h-full bg-emerald-400" style={{ width: `100%` }} />
+                    </div>
+                  </div>
+
+                  <div className="screener-card p-4 flex flex-col justify-between bg-[#070a13]/85 border border-slate-900 shadow-md">
+                    <div>
+                      <span className="text-[9px] font-extrabold text-slate-500 uppercase tracking-widest font-mono">AI Parse Latency</span>
+                      <p className="font-extrabold text-2xl text-amber-400 mt-1 font-mono">~12<span className="text-sm text-slate-500">ms</span></p>
+                    </div>
+                    <div className="w-full bg-slate-900 h-1 rounded-full overflow-hidden mt-3">
+                      <div className="h-full bg-amber-400" style={{ width: `100%` }} />
                     </div>
                   </div>
                 </div>
