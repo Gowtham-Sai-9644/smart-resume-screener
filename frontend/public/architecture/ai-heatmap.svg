@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
+  <style>
+    .title{font:18px sans-serif; fill:#0f172a}
+    .cell{stroke:#ffffff; stroke-width:1}
+    .label{font:12px sans-serif; fill:#0f172a}
+  </style>
+  <rect x="0" y="0" width="900" height="360" fill="#f8fafc" rx="8"/>
+  <text x="20" y="30" class="title">AI Feature Heatmap — Skill Intensity</text>
+
+  <!-- simple heatmap grid -->
+  <g transform="translate(60,60)">
+    <!-- 6x4 grid -->
+    <!-- row 1 -->
+    <rect class="cell" x="0" y="0" width="80" height="40" fill="#e6fffa"/>
+    <rect class="cell" x="90" y="0" width="80" height="40" fill="#bbf7d0"/>
+    <rect class="cell" x="180" y="0" width="80" height="40" fill="#86efac"/>
+    <rect class="cell" x="270" y="0" width="80" height="40" fill="#34d399"/>
+    <rect class="cell" x="360" y="0" width="80" height="40" fill="#10b981"/>
+    <rect class="cell" x="450" y="0" width="80" height="40" fill="#059669"/>
+
+    <!-- row 2 -->
+    <rect class="cell" x="0" y="50" width="80" height="40" fill="#fff7ed"/>
+    <rect class="cell" x="90" y="50" width="80" height="40" fill="#fed7aa"/>
+    <rect class="cell" x="180" y="50" width="80" height="40" fill="#fdba74"/>
+    <rect class="cell" x="270" y="50" width="80" height="40" fill="#fb923c"/>
+    <rect class="cell" x="360" y="50" width="80" height="40" fill="#f97316"/>
+    <rect class="cell" x="450" y="50" width="80" height="40" fill="#ea580c"/>
+
+    <!-- row 3 -->
+    <rect class="cell" x="0" y="100" width="80" height="40" fill="#eef2ff"/>
+    <rect class="cell" x="90" y="100" width="80" height="40" fill="#dbeafe"/>
+    <rect class="cell" x="180" y="100" width="80" height="40" fill="#bfdbfe"/>
+    <rect class="cell" x="270" y="100" width="80" height="40" fill="#93c5fd"/>
+    <rect class="cell" x="360" y="100" width="80" height="40" fill="#60a5fa"/>
+    <rect class="cell" x="450" y="100" width="80" height="40" fill="#3b82f6"/>
+  </g>
+
+  <text x="20" y="320" class="label">Heatmap colors show relative feature intensity across resumes.</text>
+</svg>

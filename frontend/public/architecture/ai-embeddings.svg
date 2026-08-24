@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
+  <style>
+    .bg{fill:#0f172a}
+    .grid{fill:#0ea5a4;opacity:0.12}
+    .dot{fill:#06b6d4;opacity:0.9}
+    .title{font:18px sans-serif; fill:#e6f7f9}
+    .label{font:12px sans-serif; fill:#cbd5e1}
+  </style>
+  <rect width="900" height="360" class="bg" rx="8"/>
+  <text x="20" y="32" class="title">AI Embeddings (t-SNE) — Candidate Clusters</text>
+
+  <!-- cluster dots -->
+  <g transform="translate(60,70)">
+    <circle class="dot" cx="40" cy="40" r="6"/>
+    <circle class="dot" cx="70" cy="60" r="6"/>
+    <circle class="dot" cx="30" cy="80" r="6"/>
+    <circle class="dot" cx="120" cy="45" r="6"/>
+    <circle class="dot" cx="140" cy="75" r="6"/>
+
+    <circle class="dot" cx="320" cy="40" r="6" fill="#f59e0b"/>
+    <circle class="dot" cx="350" cy="60" r="6" fill="#f59e0b"/>
+    <circle class="dot" cx="300" cy="80" r="6" fill="#f59e0b"/>
+
+    <circle class="dot" cx="200" cy="200" r="6" fill="#ef4444"/>
+    <circle class="dot" cx="220" cy="220" r="6" fill="#ef4444"/>
+    <circle class="dot" cx="180" cy="230" r="6" fill="#ef4444"/>
+  </g>
+
+  <text x="20" y="320" class="label">Legend: blue = strong match cluster • amber = relevant skills • red = low match</text>
+</svg>
