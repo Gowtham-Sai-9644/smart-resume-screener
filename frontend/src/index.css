@@ -1,0 +1,424 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+  border: 2px solid #090d16;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* ScreenerAI Cyber Theme Background */
+.screener-bg {
+  background-color: #05070f;
+  background-image: 
+    linear-gradient(rgba(99, 102, 241, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.05) 1px, transparent 1px),
+    radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(217, 70, 239, 0.12) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(6, 182, 212, 0.12) 0px, transparent 50%);
+  background-size: 40px 40px, 40px 40px, 100% 100%, 100% 100%, 100% 100%;
+  background-attachment: fixed;
+}
+
+/* Screener Glass Cards */
+.screener-card {
+  background: rgba(9, 13, 26, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  box-shadow: 
+    0 10px 30px -10px rgba(0, 0, 0, 0.7),
+    0 1px 0 0 rgba(255, 255, 255, 0.05) inset,
+    inset 0 0 20px 0 rgba(99, 102, 241, 0.03);
+}
+
+.screener-card-sunken {
+  background: rgba(4, 6, 14, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 
+    inset 2px 2px 8px 0 rgba(0, 0, 0, 0.8),
+    inset -1px -1px 3px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Cyber Claymorphic Buttons */
+.clay-btn {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.clay-btn:active {
+  transform: scale(0.96);
+}
+
+/* Cyber Neon Cyan Clay Button */
+.clay-btn-cyan {
+  background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+  color: #05070f;
+  box-shadow: 
+    0 0 15px 0 rgba(6, 182, 212, 0.3),
+    inset -3px -3px 6px 0 rgba(0, 0, 0, 0.35),
+    inset 3px 3px 6px 0 rgba(255, 255, 255, 0.4);
+}
+.clay-btn-cyan:hover {
+  box-shadow: 
+    0 0 25px 0 rgba(6, 182, 212, 0.5),
+    inset -2px -2px 4px 0 rgba(0, 0, 0, 0.4),
+    inset 2px 2px 4px 0 rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+.clay-btn-cyan:active {
+  box-shadow: 
+    inset 3px 3px 6px 0 rgba(0, 0, 0, 0.4),
+    inset -3px -3px 6px 0 rgba(255, 255, 255, 0.1);
+  transform: translateY(1px) scale(0.96);
+}
+
+/* Cyber Neon Indigo Clay Button */
+.clay-btn-indigo {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: white;
+  box-shadow: 
+    0 0 15px 0 rgba(99, 102, 241, 0.3),
+    inset -3px -3px 6px 0 rgba(0, 0, 0, 0.3),
+    inset 3px 3px 6px 0 rgba(255, 255, 255, 0.3);
+}
+.clay-btn-indigo:hover {
+  box-shadow: 
+    0 0 25px 0 rgba(99, 102, 241, 0.5),
+    inset -2px -2px 4px 0 rgba(0, 0, 0, 0.3),
+    inset 2px 2px 4px 0 rgba(255, 255, 255, 0.45);
+  transform: translateY(-2px);
+}
+.clay-btn-indigo:active {
+  box-shadow: 
+    inset 3px 3px 6px 0 rgba(0, 0, 0, 0.4),
+    inset -3px -3px 6px 0 rgba(255, 255, 255, 0.1);
+  transform: translateY(1px) scale(0.96);
+}
+
+/* Cyber Neon Purple Clay Button */
+.clay-btn-purple {
+  background: linear-gradient(135deg, #d946ef 0%, #c084fc 100%);
+  color: white;
+  box-shadow: 
+    0 0 15px 0 rgba(217, 70, 239, 0.3),
+    inset -3px -3px 6px 0 rgba(0, 0, 0, 0.35),
+    inset 3px 3px 6px 0 rgba(255, 255, 255, 0.35);
+}
+.clay-btn-purple:hover {
+  box-shadow: 
+    0 0 25px 0 rgba(217, 70, 239, 0.5),
+    inset -2px -2px 4px 0 rgba(0, 0, 0, 0.4),
+    inset 2px 2px 4px 0 rgba(255, 255, 255, 0.45);
+  transform: translateY(-2px);
+}
+.clay-btn-purple:active {
+  box-shadow: 
+    inset 3px 3px 6px 0 rgba(0, 0, 0, 0.4),
+    inset -3px -3px 6px 0 rgba(255, 255, 255, 0.1);
+  transform: translateY(1px) scale(0.96);
+}
+
+/* Sleek Cyber Dark Button */
+.clay-btn-dark {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #cbd5e1;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 
+    0 4px 10px 0 rgba(0, 0, 0, 0.4),
+    inset -2px -2px 4px 0 rgba(0, 0, 0, 0.5),
+    inset 2px 2px 4px 0 rgba(255, 255, 255, 0.05);
+}
+.clay-btn-dark:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  transform: translateY(-1px);
+}
+.clay-btn-dark:active {
+  transform: translateY(1px) scale(0.96);
+}
+
+/* Sunken Cyber Inputs */
+.cyber-input {
+  background: rgba(4, 6, 14, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  color: #f8fafc;
+  box-shadow: 
+    inset 2px 2px 8px 0 rgba(0, 0, 0, 0.8),
+    inset -1px -1px 3px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.25s ease;
+}
+.cyber-input:focus {
+  border-color: #06b6d4;
+  box-shadow: 
+    0 0 10px 0 rgba(6, 182, 212, 0.25),
+    inset 2px 2px 6px 0 rgba(0, 0, 0, 0.9);
+  outline: none;
+}
+
+/* Glowing texts & lines */
+.glow-text-cyan {
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.4);
+}
+.glow-text-indigo {
+  text-shadow: 0 0 10px rgba(99, 102, 241, 0.4);
+}
+.glow-text-purple {
+  text-shadow: 0 0 10px rgba(217, 70, 239, 0.4);
+}
+
+.glow-border-cyan {
+  box-shadow: 0 0 15px 0 rgba(6, 182, 212, 0.25);
+  border-color: rgba(6, 182, 212, 0.4) !important;
+}
+
+/* Tech Grid Badge */
+.cyber-badge {
+  background: rgba(30, 41, 59, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 1px 1px 2px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Animations */
+@keyframes grid-scroll {
+  0% { background-position: 0 0, 0 0; }
+  100% { background-position: 40px 40px, 40px 40px; }
+}
+
+.animate-grid {
+  animation: grid-scroll 20s linear infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; filter: brightness(1.2); }
+}
+
+.animate-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Cinematic Background Gradient Shift */
+@keyframes mesh-shift {
+  0% {
+    background-position: 0% 50%, 100% 50%, 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%, 50% 100%, 0% 50%;
+  }
+  100% {
+    background-position: 0% 50%, 100% 50%, 50% 100%;
+  }
+}
+
+.screener-bg-cinematic {
+  background-color: #030408;
+  background-image: 
+    linear-gradient(rgba(6, 182, 212, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6, 182, 212, 0.03) 1px, transparent 1px),
+    radial-gradient(at 10% 20%, rgba(99, 102, 241, 0.15) 0px, transparent 40%),
+    radial-gradient(at 90% 10%, rgba(217, 70, 239, 0.15) 0px, transparent 40%),
+    radial-gradient(at 50% 90%, rgba(6, 182, 212, 0.15) 0px, transparent 40%);
+  background-size: 40px 40px, 40px 40px, 200% 200%, 200% 200%, 200% 200%;
+  animation: mesh-shift 15s ease infinite;
+  background-attachment: fixed;
+}
+
+/* Radar scanning keyframes */
+@keyframes radar-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-radar {
+  animation: radar-rotate 4s linear infinite;
+}
+
+/* Scan line vertical beam keyframes */
+@keyframes scan-beam {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.animate-scan-beam {
+  animation: scan-beam 2.5s ease-in-out infinite;
+}
+
+/* Hologram glow */
+.hologram-glow {
+  box-shadow: 
+    0 0 30px rgba(6, 182, 212, 0.2),
+    inset 0 0 20px rgba(6, 182, 212, 0.1);
+  border-color: rgba(6, 182, 212, 0.3);
+}
+
+/* Cinematic Zoom Ken Burns Effect */
+@keyframes ken-burns {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+.animate-ken-burns {
+  animation: ken-burns 16s ease-in-out infinite;
+}
+
+/* Animatic Storyboard Transitions */
+@keyframes slide-in-left {
+  0% { opacity: 0; transform: translateX(20px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.animate-slide-left {
+  animation: slide-in-left 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes doc-drift {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+.animate-doc-drift {
+  animation: doc-drift 4s ease-in-out infinite;
+}
+
+@keyframes indicator-jump {
+  0%, 100% { transform: scale(1); filter: brightness(1); }
+  50% { transform: scale(1.08); filter: brightness(1.2); }
+}
+
+.animate-indicator-jump {
+  animation: indicator-jump 2s ease-in-out infinite;
+}
+
+/* Mouse spotlight glow tracker style */
+.glow-spotlight-container {
+  position: relative;
+}
+
+.glow-spotlight-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, 0px) var(--mouse-y, 0px),
+    rgba(6, 182, 212, 0.08),
+    transparent 80%
+  );
+  transition: opacity 0.5s ease;
+}
+
+/* Cyber tech Grid line overlay background */
+.cyber-grid-overlay {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.01) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Conic Border Tracing Animation */
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes border-trace-spin {
+  0% { --angle: 0deg; }
+  100% { --angle: 360deg; }
+}
+
+.cyber-card-trace {
+  position: relative;
+  background: #060913;
+  border-radius: 20px;
+}
+
+.cyber-card-trace::before {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  background: conic-gradient(from var(--angle), transparent 70%, #06b6d4, #6366f1, #d946ef);
+  border-radius: 21px;
+  z-index: -1;
+  animation: border-trace-spin 4s linear infinite;
+  opacity: 0.6;
+}
+
+.cyber-card-trace:hover::before {
+  opacity: 1;
+  filter: brightness(1.2) blur(1.5px);
+}
+
+/* Floating Technology Particles */
+@keyframes particle-drift {
+  0%, 100% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+  33% { transform: translateY(-15px) translateX(10px) rotate(5deg); }
+  66% { transform: translateY(10px) translateX(-10px) rotate(-5deg); }
+}
+
+.animate-particle-drift {
+  animation: particle-drift 12s ease-in-out infinite;
+}
+
+/* Infinite Brand Ticker Sliding Animation */
+@keyframes infinite-slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-infinite-slide {
+  animation: infinite-slide 25s linear infinite;
+}
+
+/* Entrance Animations & Transitions */
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+
+
+
+
+
+
+

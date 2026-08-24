@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+env/
+venv/
+.env
+
+# Node
+node_modules/
+dist/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+
+# VSCode
+.vscode/
+
+# IDEs
+.idea/
+
+# OS
+.DS_Store
+
+# Databases
+*.db
+
+# Logs
+logs/
+*.log
+
+# Build
+build/
+coverage/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+ENV/
+env/
+.env
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+*.db
+*.sqlite
+
+# Uploads directory files (but keep folder structure or create programmatically)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Node / Frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+.eslintcache
+.stylelintcache
+.vite/
+.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDEs & System
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
