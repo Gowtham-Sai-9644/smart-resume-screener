@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="60" viewBox="0 0 240 60">
+  <style>
+    .brand { font: 20px sans-serif; fill: #0f172a; font-weight:700 }
+    .dot { fill: #06b6d4 }
+  </style>
+  <rect width="240" height="60" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="16" y="36" class="brand">Smart Resume <tspan class="dot">Screener</tspan></text>
+  <circle cx="200" cy="30" r="10" class="dot"/>
+</svg>

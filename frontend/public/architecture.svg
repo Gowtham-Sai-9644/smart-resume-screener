@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="360" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360">
+  <style>
+    .box { fill: #ffffff; stroke: #2b6cb0; stroke-width: 2; rx:10; }
+    .label { font: 16px sans-serif; fill: #1a202c; }
+    .title { font: 18px sans-serif; fill: #2b6cb0; font-weight:700 }
+    .arrow { stroke:#4a5568; stroke-width:2; fill:none; marker-end:url(#arrowhead);} 
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a5568"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="28" class="title">Smart Resume Screener — Architecture</text>
+
+  <!-- Frontend -->
+  <rect class="box" x="20" y="60" width="220" height="120" />
+  <text x="30" y="95" class="label">Frontend (React + Vite)</text>
+  <text x="30" y="120" class="label">Pages, Upload UI, Dashboard</text>
+
+  <!-- Backend -->
+  <rect class="box" x="340" y="40" width="240" height="160" />
+  <text x="360" y="75" class="label">Backend (FastAPI)</text>
+  <text x="360" y="100" class="label">API routes: /jobs /resumes /matches</text>
+
+  <!-- Database -->
+  <rect class="box" x="640" y="60" width="220" height="120" />
+  <text x="650" y="95" class="label">Database (SQLite / SQLAlchemy)</text>
+  <text x="650" y="120" class="label">Jobs, Resumes, Matches</text>
+
+  <!-- Arrows -->
+  <path class="arrow" d="M240 120 L340 120" />
+  <path class="arrow" d="M580 120 L640 120" />
+
+  <!-- Notes -->
+  <text x="20" y="210" class="label">• Vite dev server serves the React app (http://localhost:3000)</text>
+  <text x="20" y="235" class="label">• FastAPI serves API on http://localhost:8000 with CORS enabled</text>
+  <text x="20" y="260" class="label">• SQLite for local development; easy to swap to PostgreSQL</text>
+</svg>
